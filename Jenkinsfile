@@ -14,11 +14,6 @@ pipeline {
                 bat 'npm test'
             }
         }
-        stage('Deploy') {
-            steps {
-                bat 'node server.js'
-            }
-        }
     }
     post {
         success {
